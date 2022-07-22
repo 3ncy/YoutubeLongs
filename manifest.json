@@ -1,0 +1,23 @@
+{
+    "name": "YoutubeLongs",
+    "version": "1",
+    "description": "Redirects all Youtube Shorts to a normal video.",
+    "background": {
+        "page": "background.html"
+    },
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ]
+}
